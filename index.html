@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Covalent Plnkr</title>
+    
+    <!-- Load common libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.2.0/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.4/zone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.41/system.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+
+    <script>
+      System
+        .import('main.ts')
+        .catch(console.error.bind(console));
+    </script>
+    
+    <!-- Load the Covalent platform stylesheet -->
+    <link href="https://unpkg.com/@covalent/core@1.0.0-beta.3-2/common/platform.css" rel="stylesheet">
+
+    <!-- Load the Covalent/Material prebuilt theme -->
+    <link href="https://unpkg.com/@covalent/core@1.0.0-beta.3-2/theming/prebuilt/blue-orange.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <covalent-app>
+      <div style="padding: 20%;text-align:center;">
+        <img src="https://camo.githubusercontent.com/5e708dbe0cf622ebdbdab5be0ede859ceb08ab91/68747470733a2f2f63646e2e7261776769742e636f6d2f54657261646174612f636f76616c656e742f646576656c6f702f7372632f6170702f6173736574732f69636f6e732f636f76616c656e742e737667" width="100">
+        <h3>Covalent Loading...</h3>
+      </div>
+    </covalent-app>
+  </body>
+
+</html>
+
+<!--
+© 2017 Teradata. All rights reserved.
+-->
